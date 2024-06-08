@@ -1,5 +1,4 @@
 // App.tsx
-import React from 'react';
 import './App.css';
 import Header from './components/header';
 import { FaInstagram, FaLinkedin, FaArrowDown } from 'react-icons/fa';
@@ -7,14 +6,11 @@ import LineText from './components/lineText';
 import gradientMain from './assets/gradienteMain.png';
 import Background from './components/background';
 import secondGradient from './assets/secondGradient.png'
-import Cards from './components/OverlayTextImage';
 import OverlayTextImage from './components/OverlayTextImage';
 import First from './assets/01.png'
 import Hike01 from './assets/hike01.png'
-
 import Second from './assets/02.png'
 import Hike02 from './assets/hike02.png'
-
 import Third from './assets/03.png'
 import Hike03 from './assets/hike03.png'
 
@@ -61,44 +57,44 @@ function App() {
           </div>
         </div>
 
-        <img src={secondGradient} alt="" className=" z-50 pt-10" />
+        <img src={secondGradient} alt="" className=" z-50 pt-10 md:pt-0 md:h-[55vh] " />
 
-        <div className="text-white z-10 pb-10 bg-[#0B1D26] ">
+        <div className="text-white z-10 pb-10  bg-[#0B1D26]  ">
           <div className="bg-[#0B1D26] ">
 
-            <div className="flex justify-center  flex-col bg-[#0B1D26]">
+            <div className="flex justify-center md:justify-center md:flex-row   flex-col bg-[#0B1D26]">
               <OverlayTextImage
                 imageUrl={First}
                 lineTexto={<LineText text="GET STARTED" />}
                 mainText="What level of hiker are you?"
                 secondaryText="Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?"
               />
-              <img src={Hike01} alt="" className="pt-[10rem] w-[60%] ml-16 my-36" />
+              <img src={Hike01} alt="" className="pt-[10rem] md:pt-0 w-[60%] md:w-[20%] ml-16 my-36" />
             </div>
 
-            <div className="flex justify-center  flex-col bg-[#0B1D26]">
+            <div className="flex justify-center md:justify-center md:flex-row  flex-col bg-[#0B1D26]">
               <OverlayTextImage
                 imageUrl={Second}
                 lineTexto={<LineText text="HIKING ESSENTIALS" />}
                 mainText="Picking the right Hiking Gear!"
                 secondaryText="The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have. Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet."
               />
-              <img src={Hike02} alt="" className="pt-[10rem] w-[60%] ml-16 my-36" />
+              <img src={Hike02} alt="" className="pt-[10rem] md:pt-0 w-[60%] md:w-[20%] ml-16 my-36" />
             </div>
 
-            <div className="flex justify-center  flex-col bg-[#0B1D26]">
+            <div className="flex justify-center md:justify-center md:flex-row  flex-col bg-[#0B1D26]">
               <OverlayTextImage
                 imageUrl={Third}
                 lineTexto={<LineText text="WHERE YOU GO IS THE KEY" />}
                 mainText="Understand Your Map & Timing"
                 secondaryText="To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction.."
               />
-              <img src={Hike03} alt="" className="pt-[10rem] w-[60%] ml-16 my-36" />
+              <img src={Hike03} alt="" className="pt-[10rem] md:pt-0 w-[60%] md:w-[20%] ml-16 my-36" />
             </div>
 
 
           </div>
-          <div className=" z-10 p-10 bg-[#0B1D26]">
+          <div className=" z-10 p-10 bg-[#0B1D26] md:flex md:items-center md:justify-around">
             <div className="">
               <div className="text-xl font-cactus">
                 DaniloMartinez
